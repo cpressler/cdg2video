@@ -21,7 +21,13 @@
 #include <inttypes.h>
 #include <zip.h>
 #include <stdio.h>
+#ifdef __cplusplus
+#define __STDINT_MACROS
+extern "C" {
 #include "ffmpeg_headers.h"
+}
+#endif
+
 
 class CdgIoStream
 {
